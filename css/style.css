@@ -1,4 +1,7 @@
+*,
 html {
+  box-sizing: border-box;
+  line-height: 1.5em;
   font-family: "Lato", sans-serif;
 }
 
@@ -7,7 +10,23 @@ body {
   flex-direction: column;
   align-items: center;
   background: rgb(235, 235, 235);
-  margin: 3em;
+  margin: 2em 1.2em;
+}
+
+header {
+  text-align: center;
+  padding: 0 2em;
+}
+
+h1,
+#title {
+  font-size: 2.5em;
+  font-weight: 900;
+  margin-top: 1em;
+}
+
+header p {
+  padding: 1.25em 0;
 }
 
 main {
@@ -20,11 +39,23 @@ main {
   background: white;
   padding: 0.5em;
   margin: 0;
+  text-align: center;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+#img-div p {
+  font-size: 16px;
+  margin: 0.7em 0;
+}
+
+@media (min-width: 1125px) {
+  #img-div {
+    padding: 0 140px;
+  }
 }
 
 #tribute-info {
@@ -37,24 +68,29 @@ img {
   gap: 3em;
 }
 
+h2 {
+  font-size: 1.25em;
+  font-weight: 900;
+  text-align: center;
+}
+
+.quote {
+  margin-right: 1.7em;
+}
+
+.quote-author {
+  margin-top: 1em;
+}
+
 p.further-read {
   font-size: 1.2em;
   font-weight: 600;
+  text-align: center;
 }
 
 /* characters */
 
 strong {
-  font-weight: 900;
-}
-
-h1 {
-  font-size: 2em;
-  font-weight: 900;
-}
-
-h2 {
-  font-size: 1.25em;
   font-weight: 900;
 }
 
@@ -65,10 +101,11 @@ p {
 ul {
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
+  gap: 1.4em;
 }
 
 ul li {
   list-style-type: disc;
-  margin-left: 1.75em;
+  margin-left: 2.2em;
+  margin-right: 0.5em;
 }
