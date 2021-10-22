@@ -22,7 +22,7 @@ body {
   align-items: center;
 
   background-image: url("../img/painting-background.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: center;
 }
 
@@ -73,6 +73,7 @@ main {
 }
 
 #img-div img {
+  display: block;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   border-radius: 10px;
   max-width: 100%;
@@ -85,8 +86,10 @@ main {
   }
 }
 
-#img-div p {
+#img-div #img-caption {
   margin: 0.7em 0;
+  color: #303035ee;
+  text-decoration: none;
   font-size: 16px;
 }
 
@@ -116,7 +119,7 @@ main {
 #tribute-info ul li strong {
   border-radius: 10px;
   background: rgb(206, 187, 157);
-  padding: 0.5em;
+  padding: 0.2em 0.5em;
   color: #0a0a23;
 }
 
@@ -131,6 +134,10 @@ main {
   list-style-type: none;
 }
 
+#tribute-info ul li a {
+  font-weight: 600;
+}
+
 #tribute-info .quote {
   margin-left: 0.2em;
   box-shadow: 0 10px 20px rgba(133, 38, 38, 0.137),
@@ -138,6 +145,10 @@ main {
   border: 2px solid rgba(133, 38, 38, 0.356);
   background: rgba(240, 240, 240, 0.842);
   padding: 1.7em;
+}
+
+#tribute-info .quote .quote-content {
+  font-style: italic;
 }
 
 #tribute-info .quote .quote-author {
